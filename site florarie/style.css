@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Overlock+SC&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #FDF6DD;
+    max-height: 100vh;
+    width: 100%;
+}
+li{
+    list-style: none;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px 0px;
+}
+
+a{
+    color: red;
+    text-decoration: none;
+    text-transform: uppercase;
+    
+}
+nav{
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    width: 100%;
+    display:flex;
+    height: 9vh;
+    background-color: white;
+    box-shadow: 0px 1.5px 5px rgba(0, 0, 0, 0.25);
+    align-items: center;
+    justify-content: center;
+
+}
+h2{
+    text-align: center;
+    line-height: 20px;
+    margin-left:-5px ;
+    cursor: pointer;
+}
+h1{
+    text-align: center;
+    font-size: 40px;
+    margin:20px 0px 0px 0px;
+}
+p{
+    font-size: 23px;
+    margin-top: 20px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+p::after{
+    content: '';
+    display: block;
+    background-color: black;
+    width: 70%;
+    height: 3px;
+    margin:0 auto;
+}
+.c-font{
+    font-family: 'Overlock SC', cursive;
+}
+.m-hide{
+    display: none;
+}
+.nav-links{
+    display:flex;
+}
+.logo-div{
+    display:flex;
+    align-items: center;
+    width: 35%;
+}
+.logo-div img{
+    width: 40px;
+    height:40px;
+}
+.container{
+    width: 100%;
+    height: 90vh;
+    position: relative;
+}
+#nav-btn{
+    width: 20%;
+    height: 6px;
+    border-radius: 20px;
+    background-color: black;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 10%;
+}
+.bottom-nav{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    bottom:0;
+    width: 100%;
+    height: 50vh;
+    background-color:#afc595;
+    border-radius: 30px 30px 0 0;
+    box-shadow:0px -1px 7px rgba(0, 0, 0, 0.25);
+    padding: 10px 0px 0px 0px;
+    transition:0.5s ease;
+    transform: translateY(43vh);
+}
+.bottom-nav.open{
+    transform: translateY(0vh);
+}
+.landing-img img{
+    width: 100%;
+}
+.cta-btn{
+    width: 50%;
+    display: block;
+    margin: 20px auto;
+    cursor: pointer;
+}
